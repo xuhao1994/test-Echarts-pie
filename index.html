@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+   <style>
+        #pic1{
+            width:456px;
+            height:100%;
+        }
+        *{
+        	margin: 0;
+        	padding: 0;
+        }
+        .clearfix::after {
+		    visibility: hidden;
+		    clear: both;
+		    display: block;
+		    height: 0;
+		    font-size: 0;
+		    content: " ";
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+		h3{
+			height: 54px;
+		    box-sizing: border-box;
+		    line-height: 54px;
+		    padding-left: 10px;
+		    border-bottom: 3px solid #019eeb;
+		    font-size: 16px;
+		    font-weight: 400;
+		    margin-bottom: 18px;
+		}
+		.zonglanHeaderBox{
+			height: 190px;
+			border: 1px solid #d2d2d2;
+			box-sizing: border-box;
+			padding: 15px 20px;
+		}
+		.zonglanHeaderBox a, .zonglanBodyBox a {
+		    padding: 5px 16px;
+		    border: 1px solid #cccccc;
+		    text-decoration: none;
+		    color: #333;
+		    font-size: 14px;
+		    border-radius: 4px;
+		    background-color: #f5f5f5;
+		    margin-left: 9px;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(1) {
+		    text-align: right;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2){
+			margin: 0 -20px;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div {
+		    float: left;
+		    width: 33%;
+		    box-sizing: border-box;
+		    padding-left: 20px;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div p {
+		    margin-bottom: 60px;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div b{
+		    font-size: 25px;
+		    color: #019eeb;
+		    font-weight: 400;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div:nth-child(1) b::after{
+		    content: "万元";
+		    font-size: 12px;
+		    margin-left: 10px;
+		    color: #999;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div:nth-child(1) b::before{
+			content: "";
+			display: inline-block;
+			height: 52px;
+			width: 52px;
+			margin-right: 10px;
+			background: url('zonglanAll.png') no-repeat center;
+			background-size: contain;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div:nth-child(2) b::before{
+			content: "";
+			display: inline-block;
+			height: 52px;
+			width: 52px;
+			margin-right: 10px;
+			background: url('zonglanNotPay.png') no-repeat center;
+			background-size: contain;
+		}
+		.zonglanHeaderBox.clearfix>div:nth-child(2)>div:nth-child(3) b::before{
+			content: "";
+			display: inline-block;
+			height: 52px;
+			width: 52px;
+			margin-right: 10px;
+			background: url('zonglanPayed.png') no-repeat center;
+			background-size: contain;
+		}
+		.zonglanBodyBox.clearfix {
+		    height: 455px;
+		    border: 1px solid #d2d2d2;
+		    margin-top: 16px;
+		    box-sizing: border-box;
+    		padding: 15px 20px;
+		}
+		.zonglanRightBox.fr ul {
+		    width: 333px;
+		    padding-top: 85px;
+		    list-style: none;
+		}
+		.zonglanRightBox.fr>p {
+		    text-align: right;
+		}
+		.zonglanRightBox.fr ul>li {
+		    font-weight: 300;
+		    padding: 5px 0px;
+		    font-size: 18px;
+		    position: relative;
+		}
+		.zonglanRightBox.fr ul>li b {
+		    font-weight: 300;
+		    margin-left: 15px;
+		    font-size: 18px;
+		}
+		.zonglanRightBox.fr ul>li:first-child {
+		    font-size: 20px;
+		}
+		.zonglanRightBox.fr ul>li:not(:first-child) span::before {
+		    content: "-";
+		    position: absolute;
+		    left: -18px;
+		    font-weight: 600;
+		    top: 3px;
+		}
+    </style>
+</head>
+<body>
+	<div id="rightBox" class="float-right publicHidden">
+		<section>
+			<h3 class="publicBorderB_3red FontSize16 FontSizeB publicPadding10 publicMarginBot15 ">总览</h3>
+			<div class="zonglanHeaderBox clearfix">
+				<div class="clearfix">
+					<a href="">结算</a>
+					<a href="">账户</a>
+				</div>
+				<div class="clearfix">
+					<div class="fl">
+						<p>总销售额</p>
+						<b>1586.00</b>
+					</div>
+					<div class="fl">
+						<p>待结算</p>
+						<b>986.00</b>
+					</div>
+					<div class="fl">
+						<p>已结算</p>
+						<b>1586.00</b>
+					</div>
+				</div>
+			</div>
+			<div class="zonglanBodyBox clearfix">
+				<div id="pic1" class="fl"></div>
+				<div class="zonglanRightBox fr">
+					<p><a href="">列表查看</a></p>
+					<ul>
+						<li><span>总套餐数</span><b>220</b></li>
+						<li><span>入职体检</span><b>7</b></li>
+						<li><span>常规体检</span><b>24</b></li>
+						<li><span>全身体检</span><b>24</b></li>
+						<li><span>婚前体检</span><b>22</b></li>
+						<li><span>优生优育</span><b>46</b></li>
+						<li><span>男性体检</span><b>40</b></li>
+						<li><span>女性体检</span><b>57</b></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</section>
+	</div>
+	<script src="jquery.min.js"></script>
+	<script src="echarts.js"></script>
+	<script>
+	var optionColor = ["#ff9873","#6495ed","#87cefa","#da70d6","#32cd32","#1d92e3","#fbc700"];
+
+
+	$(function(){
+		//生成饼状图
+		var myCharts1 = echarts.init(document.getElementById('pic1'));
+     	var option1 = {
+	    backgroundColor: '#fff',
+	    title: {
+	        text: '待结算套餐统计',
+	        left: 'left',
+	        top: 20,
+	        textStyle: {
+	            color: '#333',
+	            fontWeight:300
+	        }
+	    },
+
+	    tooltip : {
+	        trigger: 'item',
+	        formatter: "{a} <br/>{b} : {c} ({d}%)"
+	    },
+	    series : [
+	        {
+	            name:'待结算',
+	            type:'pie',
+	            radius : '55%',
+	            center: ['50%', '50%'],
+	            data:[
+	                {value:7, name:'入职体检'},
+	                {value:24, name:'常规体检'},
+	                {value:24, name:'全身体检'},
+	                {value:22, name:'婚前体检'},
+	                {value:46, name:'优生优育'},
+	                {value:40, name:'男性体检'},
+	                {value:57, name:'女性体检'}
+	            ].sort(function (a, b) { return a.value - b.value; }),
+	            roseType:false,
+	            color:optionColor,
+	            label:{
+	            	normal:{
+	            		fontSize:17
+	            	}
+	            },
+	            labelLine: {
+	                normal: {
+	                    lineStyle: {
+	                        width:1,
+	                        type:"solid"
+	                    },
+	                    length: 10,
+	                    length2: 20
+	                }
+	            },
+	            animationType: 'scale',
+	            animationEasing: 'elasticOut',
+	            animationDelay: function (idx) {
+	                return Math.random() * 200;
+	            }
+	        }
+	    ]
+	    };
+	    myCharts1.setOption(option1);
+
+	    //配置列表颜色
+	    optionColor.map(function(ele,index){
+	    	$(".zonglanRightBox ul li").eq(index+1).css('color',ele)
+	    })
+
+
+});
+     
+</script>
+</body>
+</html>
